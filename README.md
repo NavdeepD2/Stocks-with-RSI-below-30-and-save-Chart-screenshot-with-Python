@@ -1,2 +1,1 @@
-# Stocks-With-RSI-Below-30-with-Python
-Stocks With RSI Below 30 with Python
+# Stocks with RSI Below 30 and save Chart screenshot with Python
