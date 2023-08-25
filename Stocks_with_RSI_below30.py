@@ -1,3 +1,4 @@
+# https://github.com/NavdeepD2/Stocks-With-RSI-Below-30-with-Python
 import os
 import time
 from nsetools import Nse
@@ -34,8 +35,8 @@ async def check_rsi_and_screenshot(stock_symbol):
             rs = avg_gain / avg_loss
             rsi = 100 - (100 / (1 + rs))
 
-            # Check if RSI is below 40
-            if rsi.iloc[-1] < 40:
+            # Check if RSI is below 30
+            if rsi.iloc[-1] < 30:
                 browser = await launch(headless=True)
                 page = await browser.newPage()
                 await page.goto(f'https://finance.yahoo.com/quote/{stock_symbol}.NS')
